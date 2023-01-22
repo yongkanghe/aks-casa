@@ -19,12 +19,12 @@ az aks create \
 az aks get-credentials -g $MY_PREFIX-$MY_GROUP -n $(az aks list -o table | grep $MY_PREFIX-$MY_CLUSTER | awk '{print $1}')
 
 echo "" | awk '{print $1}'
-./mysql-deploy.sh
+./postgresql-deploy.sh
 
 echo "" | awk '{print $1}'
 endtime=$(date +%s)
 duration=$(( $endtime - $starttime ))
-echo "-------Total time to build an AKS Cluster with MySQL is $(($duration / 60)) minutes $(($duration % 60)) seconds."
+echo "-------Total time to build an AKS Cluster with PostgreSQL is $(($duration / 60)) minutes $(($duration % 60)) seconds."
 echo "" | awk '{print $1}'
 echo "-------Created by Yongkang"
 echo "-------Email me if any suggestions or issues he@yongkang.cloud"
