@@ -12,7 +12,7 @@ This script based automation allows you to build a ready-to-use AKS demo environ
 1. Go to open Azure Cloud Shell
 2. Clone the github repo, run below command
 ````
-git clone https://github.com/yongkanghe/aks-casa.git
+git clone https://github.com/yongkanghe/aks-casa.git;cd aks-casa
 ````
 3. Optionally, you can customize the clustername, vm size, location, region, containername, etc.
 ````
