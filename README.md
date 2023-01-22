@@ -16,7 +16,10 @@ This script based automation allows you to build a ready-to-use AKS demo environ
 ````
 git clone https://github.com/yongkanghe/aks-casa.git
 ````
-3. Create Azure App Registration first# EKS Cluster Automation 
+3. Optionally, you can customize the clustername, vm size, location, region, containername, etc.
+````
+vi setenv.sh
+````
 
 # AKS Cluster Automation 
 
