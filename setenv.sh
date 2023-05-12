@@ -12,4 +12,4 @@ export MY_CONTAINER=velero4yong1      #Customize your container
 export AZURE_STORAGE_ACCOUNT_ID=azsa4yong1  #Customize your Storage Account
 export K8S_VERSION=1.26                     #Customize your Kubernetes Version
 export MY_PREFIX=$(echo $(whoami) | sed -e 's/\_//g' | sed -e 's/\.//g' | awk '{print tolower($0)}')
-
+export PATH=$PATH:~/aks-casa
