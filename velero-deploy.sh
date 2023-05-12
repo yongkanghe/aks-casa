@@ -1,4 +1,4 @@
-echo '-------Deploy Velero for GKE Backup (typically in ~2 min)'
+echo '-------Deploy Velero for GKE Backup (typically in ~1 min)'
 starttime=$(date +%s)
 . ./setenv.sh
 
