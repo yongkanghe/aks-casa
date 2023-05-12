@@ -31,6 +31,8 @@ AZURE_CLIENT_SECRET=${AZURE_CLIENT_SECRET}
 AZURE_RESOURCE_GROUP=${AKS_RG}
 EOF
 
+sleep 15
+
 echo "-------Install & Start velero on AKS"
 velero install \
     --provider azure \
