@@ -41,10 +41,28 @@ velero install \
 
 echo "-------One time On-Demand Backup of yong-postgresql namespace"
 kubectl wait --for=condition=ready --timeout=180s -n velero pod -l component=velero
-sleep 10
-kubectl get bsl -n velero
-sleep 5
-kubectl get bsl -n velero
+
+kubectl get bsl -n velero | grep Unavailable
+if [ `echo $?` -eq 1 ]
+then
+  echo '-------Waiting for BSL becomes available'
+  sleep 5
+fi
+
+kubectl get bsl -n velero | grep Unavailable
+if [ `echo $?` -eq 1 ]
+then
+  echo '-------Waiting for BSL becomes available'
+  sleep 5
+fi
+
+kubectl get bsl -n velero | grep Unavailable
+if [ `echo $?` -eq 1 ]
+then
+  echo '-------Waiting for BSL becomes available'
+  sleep 5
+fi
+
 velero backup create yong-postgresql-backup --include-namespaces yong-postgresql
 
 echo "-------Hourly scheduled backup of yong-postgresql namespace"
