@@ -9,7 +9,7 @@ az aks create \
   --location $MY_LOCATION \
   --generate-ssh-keys \
   --kubernetes-version $AKS_K8S_VERSION \
-  --node-count 1 \
+  --node-count 2 \
   --node-vm-size $MY_VMSIZE \
   --enable-cluster-autoscaler \
   --min-count 1 \
