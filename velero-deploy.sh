@@ -43,21 +43,21 @@ echo "-------One time On-Demand Backup of yong-postgresql namespace"
 kubectl wait --for=condition=ready --timeout=180s -n velero pod -l component=velero
 
 kubectl get bsl -n velero | grep Unavailable
-if [ `echo $?` -eq 0 ]
+if [ `echo $?` -eq 1 ]
 then
   echo '-------Waiting for BSL becomes available'
   sleep 15
 fi
 
 kubectl get bsl -n velero | grep Unavailable
-if [ `echo $?` -eq 0 ]
+if [ `echo $?` -eq 1 ]
 then
   echo '-------Waiting for BSL becomes available'
   sleep 10
 fi
 
 kubectl get bsl -n velero | grep Unavailable
-if [ `echo $?` -eq 0 ]
+if [ `echo $?` -eq 1 ]
 then
   echo '-------Waiting for BSL becomes available'
   sleep 5
