@@ -68,6 +68,8 @@ velero backup create yong-postgresql-backup --include-namespaces yong-postgresql
 echo "-------Hourly scheduled backup of yong-postgresql namespace"
 kubectl create -f velero-schedule.yaml
 
+velero backup get
+
 endtime=$(date +%s)
 duration=$(( $endtime - $starttime ))
 echo "" | awk '{print $1}'
