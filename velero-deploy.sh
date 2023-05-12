@@ -31,8 +31,6 @@ AZURE_CLIENT_SECRET=${AZURE_CLIENT_SECRET}
 AZURE_RESOURCE_GROUP=${AKS_RG}
 EOF
 
-sleep 15
-
 echo "-------Install & Start velero on AKS"
 velero install \
     --provider azure \
@@ -43,6 +41,10 @@ velero install \
 
 echo "-------One time On-Demand Backup of yong-postgresql namespace"
 kubectl wait --for=condition=ready --timeout=180s -n velero pod -l component=velero
+sleep 10
+kubectl get bsl -n velero
+sleep 5
+kubectl get bsl -n velero
 velero backup create yong-postgresql-backup --include-namespaces yong-postgresql
 
 echo "-------Hourly scheduled backup of yong-postgresql namespace"
