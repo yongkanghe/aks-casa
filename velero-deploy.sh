@@ -34,7 +34,7 @@ EOF
 echo "-------Install & Start velero on AKS"
 velero install \
     --provider azure \
-    --plugins velero/velero-plugin-for-microsoft-azure:v1.0.0 \
+    --plugins velero/velero-plugin-for-microsoft-azure:v1.6.0 \
     --bucket $MY_PREFIX-$MY_CONTAINER \
     --secret-file ./credentials-velero \
     --backup-location-config resourceGroup=$AKS_RG,storageAccount=$MY_PREFIX$AZURE_STORAGE_ACCOUNT_ID
