@@ -34,7 +34,7 @@ EOF
 echo "-------Install & Start velero on AKS"
 velero install \
     --provider azure \
-    --plugins velero/velero-plugin-for-microsoft-azure:v1.6.0 \
+    --plugins velero/velero-plugin-for-microsoft-azure:v1.9.0 \
     --bucket $MY_PREFIX-$MY_CONTAINER \
     --use-node-agent \
     --uploader-type kopia \
