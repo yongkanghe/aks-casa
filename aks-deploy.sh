@@ -16,7 +16,7 @@ az aks create \
   --max-count 3 \
   --network-plugin azure
 
-az aks get-credentials -g $MY_PREFIX-$MY_GROUP -n $(az aks list -o table | grep $MY_PREFIX-$MY_CLUSTER | awk '{print $1}')
+az aks get-credentials -g $MY_PREFIX-$MY_GROUP -n $(az aks list -g $MY_PREFIX-$MY_GROUP -o table | grep $MY_PREFIX-$MY_CLUSTER | awk '{print $1}')
 
 echo "" | awk '{print $1}'
 ./postgresql-deploy.sh
