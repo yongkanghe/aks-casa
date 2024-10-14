@@ -4,11 +4,11 @@ starttime=$(date +%s)
 
 echo "-------Download and Install verlero"
 if [ ! -f ~/aks-casa/velero ]; then
-  wget https://github.com/vmware-tanzu/velero/releases/download/v1.13.0/velero-v1.13.0-linux-amd64.tar.gz
-  tar -zxvf velero-v1.13.0-linux-amd64.tar.gz
-  mv velero-v1.13.0-linux-amd64/velero ~/aks-casa
-  rm velero-v1.13.0-linux-amd64.tar.gz
-  rm -rf velero-v1.13.0-linux-amd64.tar.gz
+  wget https://github.com/vmware-tanzu/velero/releases/download/v1.14.1/velero-v1.14.1-linux-amd64.tar.gz
+  tar -zxvf velero-v1.14.1-linux-amd64.tar.gz
+  mv velero-v1.14.1-linux-amd64/velero ~/aks-casa
+  rm velero-v1.14.1-linux-amd64.tar.gz
+  rm -rf velero-v1.14.1-linux-amd64.tar.gz
 fi
 
 echo '-------Create a Azure storage account & blob container'
