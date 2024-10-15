@@ -9,11 +9,11 @@ az aks create \
   --location $MY_LOCATION \
   --generate-ssh-keys \
   --kubernetes-version $AKS_K8S_VERSION \
-  --node-count 1 \
+  --node-count 3 \
   --node-vm-size $MY_VMSIZE \
   --enable-cluster-autoscaler \
-  --min-count 1 \
-  --max-count 3 \
+  --min-count 3 \
+  --max-count 5 \
   --network-plugin azure
 
 az aks get-credentials -g $MY_PREFIX-$MY_GROUP -n $(az aks list -g $MY_PREFIX-$MY_GROUP -o table | grep $MY_PREFIX-$MY_CLUSTER | awk '{print $1}')
