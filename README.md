@@ -1,4 +1,4 @@
-#### Follow [@YongkangHe](https://twitter.com/yongkanghe) on Twitter, Subscribe [K8s Data Management](https://www.youtube.com/channel/UCm-sw1b23K-scoVSCDo30YQ?sub_confirmation=1) Youtube Channel
+#### Follow [@K8SUG](https://linktr.ee/k8sug) on Linktree - your one-stop hub for all social platforms
 
 I just want to build an AKS Cluster to play with the various Security and Data Management capabilities e.g. Security Scans, Backup/Restore, Disaster Recovery and Application Mobility. It is challenging to create AKS Cluster from Azure Cloud if you are not familiar to it. After the AKS Cluster is up running, we still need to install a sample database, create policies etc.. The whole process is not that simple.
 
@@ -62,6 +62,4 @@ https://cloudcasa.io
 
 # Contributors
 
-#### Follow [Yongkang He](http://yongkang.cloud) on LinkedIn, Join [Kubernetes Data Management](https://www.linkedin.com/groups/13983251) LinkedIn Group
-
-#### Follow [Louisa He](https://www.linkedin.com/in/louisahe/) on LinkedIn, Join [Kubernetes Data Management](http://t.k8sug.com) Telegram Group
+#### Follow 🔥 [@K8SUG](https://linktr.ee/k8sug) on Linktree - your one-stop hub for all social platforms
