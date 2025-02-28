@@ -31,8 +31,8 @@ vi setenv.sh
 ./aks-destroy.sh
 ````
 
-# AKS 1.26 Automation video
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/rNRjvYRy_qY/0.jpg)](https://www.youtube.com/watch?v=rNRjvYRy_qY)
+# AKS 1.29 Automation video
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CNkw4PjgsJk/0.jpg)](https://www.youtube.com/watch?v=CNkw4PjgsJk)
 #### Subscribe [K8s Data Management](https://www.youtube.com/channel/UCm-sw1b23K-scoVSCDo30YQ?sub_confirmation=1) Youtube Channel
 
 # Velero for AKS Automation 
